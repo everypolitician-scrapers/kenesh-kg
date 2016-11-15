@@ -10,4 +10,4 @@ strategy = ScrapedPage::Strategy::LiveRequest.new
 require 'open-uri/cached'
 
 page = MembersListPage.new(url: listpage, strategy: strategy)
-warn page.to_h
+pp page.to_h
